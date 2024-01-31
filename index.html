@@ -24,61 +24,176 @@
     <title>Bombas</title>
   </head>
   <body class="font-montserrat">
-    <!--========== Announcement bar ==========-->
-    <section class="w-full h-fit bg-announcement-blue py-3">
-      <div class="">
-        <div class="w-full">
-          <h6 class="text-white text-center text-sm font-semibold">
-            Get Your Valentine's Day Gifts by 2/13
-          </h6>
-          <p class="text-white text-center text-xs font-normal">
-            Order with Ground Shipping by 2/6 Midnight PST
-          </p>
+    <main class="relative">
+      <!--========== Announcement bar ==========-->
+      <section class="w-full h-fit bg-announcement-blue py-3">
+        <div class="">
+          <div class="w-full">
+            <h6 class="text-white text-center text-sm font-semibold">
+              Get Your Valentine's Day Gifts by 2/13
+            </h6>
+            <p class="text-white text-center text-xs font-normal">
+              Order with Ground Shipping by 2/6 Midnight PST
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
-    <!--========== End Announcement bar ==========-->
+      </section>
+      <!--========== End Announcement bar ==========-->
 
-    <!--========== Navigation ==========-->
-    <header class="w-full h-16 flex justify-center items-center">
-      <div class="w-[90%] mx-auto flex justify-between items-center">
-        <!-- Hamburger and search icons on small screen -->
-        <div class="flex justify-center items-center">
-          <!-- Hamburger -->
-          <div class="w-11 h-11 flex justify-center items-center">
-            <i class="fa-solid fa-bars text-2xl"></i>
+      <!--========== Navigation ==========-->
+      <header class="w-full h-16 flex justify-center items-center">
+        <div
+          class="w-[90%] mx-auto flex justify-between items-center lg:mx-[64px] lg:w-full"
+        >
+          <!-- Hamburger and search icons on small screen -->
+          <div class="flex justify-center items-center lg:hidden">
+            <!-- Hamburger -->
+            <div class="w-11 h-11 flex justify-center items-center">
+              <i class="fa-solid fa-bars text-2xl"></i>
+            </div>
+            <!-- Search on small screen -->
+            <div class="w-11 h-11 flex justify-center items-center">
+              <i class="fa-solid fa-magnifying-glass text-xl"></i>
+            </div>
           </div>
-          <!-- Search on small screen -->
-          <div class="w-11 h-11 flex justify-center items-center">
-            <i class="fa-solid fa-magnifying-glass text-xl"></i>
-          </div>
-        </div>
-        <!-- End Hamburger and search icons -->
-        <!-- Logo -->
-        <div class="flex justify-center items-center">
-          <a href="#" class="font-extrabold text-xl">BOMBAS</a>
-        </div>
-        <!-- Logo -->
-        <!-- Log in basket in search on large screen-->
-        <div class="flex justify-center items-center">
-          <!--Login-->
-          <div class="w-11 h-11 flex justify-center items-center">
-            <a class="block text-xs font-semibold" href="#">Log In</a>
-          </div>
-          <!-- Search-->
+          <!-- End Hamburger and search icons -->
+          <!-- Logo -->
           <div
-            class="hidden bg-yellow-400 w-11 h-11 justify-center items-center"
+            class="flex justify-center items-center lg:w-[287px] lg:justify-start"
           >
-            <i class="fa-solid fa-magnifying-glass text-xl"></i>
+            <a href="#" class="font-extrabold text-xl">BOMBAS</a>
           </div>
-          <!--Basket-->
-          <div class="w-11 h-11 flex justify-center items-center">
-            <i class="fa-solid fa-basket-shopping text-xl"></i>
+          <!-- Logo -->
+          <!-- Navigation-->
+          <ul
+            class="hidden lg:flex lg:justify-between lg:items-center lg:w-[364px]"
+          >
+            <li class="hidden lg:block lg:text-sm lg:font-semibold">
+              <a href="#">Women</a>
+            </li>
+            <li class="hidden lg:block lg:text-sm lg:font-semibold">
+              <a href="#">Men</a>
+            </li>
+            <li class="hidden lg:block lg:text-sm lg:font-semibold">
+              <a href="#">Kids</a>
+            </li>
+            <li class="hidden lg:block lg:text-sm lg:font-semibold">
+              <a href="#">Our Mission</a>
+            </li>
+            <li class="hidden lg:block lg:text-sm lg:font-semibold">
+              <a href="#">Help</a>
+            </li>
+          </ul>
+          <!-- ENd Navigation-->
+          <!-- Log in basket in search on large screen-->
+          <div
+            class="flex justify-center items-center lg:w-[287px] lg:justify-end"
+          >
+            <!--Login-->
+            <div class="w-11 h-11 flex justify-center items-center">
+              <a class="block text-xs font-semibold" href="#">Log In</a>
+            </div>
+            <!-- Search-->
+            <div
+              class="hidden w-11 h-11 lg:justify-center lg:items-center lg:flex"
+            >
+              <i class="fa-solid fa-magnifying-glass text-xl"></i>
+            </div>
+            <!--Basket-->
+            <div class="w-11 h-11 flex justify-center items-center">
+              <i class="fa-solid fa-basket-shopping text-xl"></i>
+            </div>
+          </div>
+          <!-- End Log in basket in search on large screen-->
+        </div>
+      </header>
+      <!--========== EndNavigation ==========-->
+
+      <!--========== Menu On small Device ==========-->
+      <section
+        class="bg-white w-full h-screen fixed top-0 left-0 right-0 z-10 hidden"
+      >
+        <div class="w-[90%] mx-auto pt-5">
+          <!--Logo and close icon-->
+          <div
+            class="flex justify-between items-center mb-5 border-b border-gray-100 pb-5"
+          >
+            <div class="font-extrabold text-lg">BOMBAS</div>
+            <div>
+              <i class="fa-solid fa-xmark text-2xl"></i>
+            </div>
+          </div>
+          <!-- End Logo and close icon-->
+
+          <!--hidden Mobile nav-->
+          <div class="flex justify-between items-center mb-5">
+            <div class="font-semibold block text-lg">Women</div>
+            <div>
+              <i class="fa-solid fa-angle-right text-2xl"></i>
+            </div>
+          </div>
+          <div class="flex justify-between items-center mb-5">
+            <div class="font-semibold block text-lg">Men</div>
+            <div>
+              <i class="fa-solid fa-angle-right text-2xl"></i>
+            </div>
+          </div>
+          <div class="flex justify-between items-center mb-5">
+            <div class="font-semibold block text-lg">Kids</div>
+            <div>
+              <i class="fa-solid fa-angle-right text-2xl"></i>
+            </div>
+          </div>
+          <div
+            class="flex justify-between items-center mb-5 border-b border-gray-100 pb-5"
+          >
+            <div class="font-semibold block text-lg">Our Mission</div>
+            <div>
+              <i class="fa-solid fa-angle-right text-2xl"></i>
+            </div>
+          </div>
+          <div class="flex justify-between items-center mb-5">
+            <div>
+              <a href="#" class="font-normal block text-base">Help</a>
+            </div>
+          </div>
+          <div class="flex justify-between items-center">
+            <div>
+              <a href="#" class="font-normal block text-base">Log In</a>
+            </div>
+          </div>
+          <!--End hidden Mobile nav-->
+        </div>
+      </section>
+      <!--========== End Menu On small Device ==========-->
+
+      <!--========== categories ==========-->
+      <section class="h-[190px] bg-green-100">
+        <div class="grid gap-4 grid-cols-2 grid-rows-2 w-[90%] mx-auto">
+          <div
+            class="bg-underwear w-full h-fit bg-center bg-cover bg-no-repeat rounded-lg flex justify-center items-start"
+          >
+            <h4 class="text-white font-semibold text-lg mt-2">Underwear</h4>
+          </div>
+          <div
+            class="bg-socks w-full h-fit bg-center bg-cover bg-no-repeat rounded-lg flex justify-center items-start"
+          >
+            <h4 class="text-white font-semibold text-lg mt-2">Socks</h4>
+          </div>
+          <div
+            class="bg-slippers w-full h-fit bg-center bg-cover bg-no-repeat rounded-lg flex justify-center items-start"
+          >
+            <h4 class="text-white font-semibold text-lg mt-2">Slippers</h4>
+          </div>
+          <div
+            class="bg-tShirts w-full h-auto bg-center bg-cover bg-no-repeat rounded-lg flex justify-center items-start"
+          >
+            <h4 class="text-white font-semibold text-lg mt-2">T-Shirts</h4>
           </div>
         </div>
-        <!-- End Log in basket in search on large screen-->
-      </div>
-    </header>
-    <!--========== EndNavigation ==========-->
+      </section>
+
+      <!--========== End categories ==========-->
+    </main>
   </body>
 </html>
